@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="ExtJs">
+  <template name="xview" value="Ext.define('$NAMESPACE$.view.$CLASSNAME$', {&#10;    extend: '$PARENTCLASS$',&#10;    alias: '$ALIAS$',&#10;    layout: {&#10;        type: '$LAYOUT_TYPE$'     &#10;    },&#10;    items: [    &#10;    ]&#10;    $END$&#10;});" description="ExtJs Default View" toReformat="false" toShortenFQNames="true">
+    <variable name="NAMESPACE" expression="" defaultValue="App" alwaysStopAt="true" />
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENTCLASS" expression="" defaultValue="Ext.Container" alwaysStopAt="true" />
+    <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="xform" value="Ext.define('$NAMESPACE$.view.$VIEWNAME$', {&#10;    extend: 'Ext.form.Panel',&#10;    alias: '$ALIAS$',&#10;    items: [{&#10;        xtype: 'fieldset',&#10;        title: '$TITLE$',&#10;        defaults: {&#10;            xtype: 'textfield',&#10;            labelWidth: '110px'&#10;        },&#10;        items: [{&#10;            name: '$NAME$',&#10;            label: '$LABEL$',&#10;            required: false,&#10;            autoCapitalize: false&#10;        }$END$]&#10;    }, {&#10;        xtype: 'button',&#10;        action: '$SUBMITNAME$',&#10;        text: '$SUBMITTEXT$'&#10;    }]&#10;});" description="ExtJs Form Panel with Fieldset" toReformat="false" toShortenFQNames="true">
+    <variable name="NAMESPACE" expression="" defaultValue="App" alwaysStopAt="true" />
+    <variable name="VIEWNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUBMITNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUBMITTEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="xmodel" value="Ext.define('$NAMESPACE$.model.$CLASSNAME$', {&#10;    extend: 'Ext.data.Model',&#10;    idProperty: '$IDPROP$',&#10;    fields: [{&#10;        name: '$FIELDNAME$',&#10;        type: '$FIELDTYPE$'&#10;    }]&#10; });&#10;" description="ExtJs Model" toReformat="true" toShortenFQNames="true">
+    <variable name="NAMESPACE" expression="" defaultValue="App" alwaysStopAt="true" />
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="IDPROP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELDNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELDTYPE" expression="" defaultValue="string" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="xstore" value="Ext.define('$NAMESPACE$.store.$FILE$', {&#10;    extend: 'Ext.data.Store',&#10;    model: '$MODEL$',&#10;    remoteFilter: false,&#10;    remoteSort: false,&#10;    autoLoad: false&#10;});" description="ExtJs Store" toReformat="true" toShortenFQNames="true">
+    <variable name="NAMESPACE" expression="" defaultValue="App" alwaysStopAt="true" />
+    <variable name="FILE" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="xcon" value="Ext.define('$NAMESPACE$.controller.$CLASSNAME$', {&#10;    extend: 'Ext.app.Controller',&#10;    refs: [{&#10;        $REFS$&#10;    }],&#10;    init: function() {&#10;        var me = this;&#10;        me.control({&#10;            $CONTROL$&#10;        });    &#10;    }&#10;    $END$&#10; });" description="ExtJs Controller" toReformat="false" toShortenFQNames="true">
+    <variable name="NAMESPACE" expression="" defaultValue="App" alwaysStopAt="false" />
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="REFS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
